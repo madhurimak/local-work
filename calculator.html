@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+    </head>
+    <style>
+        #forms{
+            margin:50px 40% 0;
+            background-color: gray;
+            padding-bottom: 10px;
+        }
+        #text, #button{
+            width: 250px;
+            height: 30px;
+        }
+        input{
+            width: 80px;
+            height: 30px;
+            margin-top: 9px;
+            padding: 2px;
+            border-radius: 10px;
+        }
+    </style>
+    <body>
+        <center>
+            <form id="forms" name="forms">
+                <input type="text" name="text" id="text"><br>
+
+                <input type="button" name="1" value="1" onclick="forms.text.value += '1'">
+                <input type="button" value="2" onclick="forms.text.value += '2'">
+                <input type="button" value="3" onclick="forms.text.value += '3'"><br>
+
+                <input type="button" value="4" onclick="forms.text.value += '4'">
+                <input type="button" value="5" onclick="forms.text.value += '5'">
+                <input type="button" value="6" onclick="forms.text.value += '6'"><br>
+
+                <input type="button" value="7" onclick="forms.text.value += '7'">
+                <input type="button" value="8" onclick="forms.text.value += '8'">
+                <input type="button" value="9" onclick="forms.text.value += '9'"><br>
+
+                <input type="button" value="+" onclick="forms.text.value += '+'">
+                <input type="button" value="-" onclick="forms.text.value += '-'">
+                <input type="button" value="/" onclick="forms.text.value += '/'"><br>
+
+                <input type="button" value="*" onclick="forms.text.value += '*'">
+                <input type="button" value="0" onclick="forms.text.value += '0'">
+                <input type="button" value="=" onclick="forms.text.value =eval(forms.text.value)"><br>
+
+                <input type="button" value="Square" id="square">
+                <input type="button" value="Sqrt" id="sqrt">
+                <input type="button" value="&lt;" id="backspace">
+
+                <input type="button" value="Clear All" id="button" onclick="forms.text.value=' '">
+
+            </form>
+        </center>
+
+        <script>
+            var squareElement = document.getElementById('square');
+            var textElement = document.getElementById('text');
+            var backspaceElement = document.getElementById('backspace');
+            var sqrtElement=document.getElementById('sqrt')
+
+            squareElement.addEventListener('click', function() {
+                textElement.value = Math.pow(textElement.value, 2);
+            });
+
+            sqrtElement.addEventListener('click', function() {
+                textElement.value = Math.sqrt(textElement.value);
+            });
+
+            backspaceElement.addEventListener('click', function() {
+                textElement.value = textElement.value.slice(0, -1);
+            });
+            function dealWithKeyboard(1){
+            alert("hi");
+            }
+        </script>
+    </body>
+</html>
