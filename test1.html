@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            div{
+                height: 100px;
+                width: 100px;
+                border: 1px solid black;
+                margin-top: 20%;
+            }
+        </style>
+        <script>
+            function heightWidth(){
+                document.getElementById('height').style.height=" ";
+                document.getElementById('width').style.width=" ";
+                document.getElementById('display').style.display='block';
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+        HEIGHT : <input type="text" id="height" >
+        WIDTH : <input type="text" id="width">
+        <input type="submit" value="submit" onclick="heightWidth();">
+        <div id="display" >
+        </div>
+        </center>
+    </body>
+</html>
