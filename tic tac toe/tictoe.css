@@ -1,0 +1,27 @@
+body{
+  background-color: antiquewhite;
+  width: 550px;
+  margin: auto;
+}
+
+h1{
+  border-bottom: 1px solid palevioletred;
+  text-align: center;
+}
+
+#message{
+  font-size: 18pt;
+}
+
+.square{
+  height: 80px;
+  width: 80px;
+  font-size: 45pt;
+  text-align: center;
+}
+
+#restart{
+  font-size: 18pt;
+  text-decoration: none;
+  color: brown;
+}
