@@ -16,50 +16,67 @@
         input{
             width: 80px;
             height: 30px;
-            margin-top: 9px;
+            margin-top:9px;
             padding: 2px;
             border-radius: 10px;
         }
+        .playing {
+            transform: scale(1.1);
+        }
+
+        .key {
+            transition: all .07s ease;
+            display: inline-block;
+        }
+
     </style>
     <body>
+        <div class="keys">
         <center>
             <form id="forms" name="forms">
                 <input type="text" name="text" id="text"><br>
+<<<<<<< HEAD
                 <div data-key="97"></div>
                 <input type="button" name="1" value="1" onclick="forms.text.value += '1'">
                 <input type="button" value="2" onclick="forms.text.value += '2'">
                 <input type="button" value="3" onclick="forms.text.value += '3'"><br>
+=======
 
-                <input type="button" value="4" onclick="forms.text.value += '4'">
-                <input type="button" value="5" onclick="forms.text.value += '5'">
-                <input type="button" value="6" onclick="forms.text.value += '6'"><br>
+                <div data-key="97" class="key"><input type="button" name="1" value="1" onclick="forms.text.value += '1'"></div>
+                <div data-key="98" class="key"><input type="button" name="2" value="2" onclick="forms.text.value += '2'"></div>
+                <div data-key="99" class="key" ><input type="button" name="3" value="3" onclick="forms.text.value += '3'"></div><br>
+>>>>>>> 1e73dd9432eb8a5dff08b12e262c6a784f58b2cc
 
-                <input type="button" value="7" onclick="forms.text.value += '7'">
-                <input type="button" value="8" onclick="forms.text.value += '8'">
-                <input type="button" value="9" onclick="forms.text.value += '9'"><br>
+                <div data-key="100" class="key"> <input type="button" name="4" value="4" onclick="forms.text.value += '4'"></div>
+                <div data-key="101" class="key"><input type="button" name="5" value="5" onclick="forms.text.value += '5'"></div>
+                <div data-key="102" class="key"><input type="button" name="6" value="6" onclick="forms.text.value += '6'"></div><br>
 
-                <input type="button" value="+" onclick="forms.text.value += '+'">
-                <input type="button" value="-" onclick="forms.text.value += '-'">
-                <input type="button" value="/" onclick="forms.text.value += '/'"><br>
+                <div data-key="103" class="key"><input type="button" name="7" value="7" onclick="forms.text.value += '7'"></div>
+                <div data-key="104" class="key"><input type="button" name="8" value="8" onclick="forms.text.value += '8'"></div>
+                <div data-key="105" class="key"><input type="button" name="9" value="9" onclick="forms.text.value += '9'"></div><br>
 
-                <input type="button" value="*" onclick="forms.text.value += '*'">
-                <input type="button" value="0" onclick="forms.text.value += '0'">
-                <input type="button" value="=" onclick="forms.text.value =eval(forms.text.value)"><br>
+                <div data-key="107" class="key"><input type="button" name="+" value="+" onclick="forms.text.value += '+'"></div>
+                <div data-key="109" class="key"><input type="button" name="-" value="-" onclick="forms.text.value += '-'"></div>
+                <div data-key="111" class="key"><input type="button" name="/" value="/" onclick="forms.text.value += '/'"></div><br>
 
-                <input type="button" value="Square" id="square">
-                <input type="button" value="Sqrt" id="sqrt">
-                <input type="button" value="&lt;" id="backspace">
+                <div data-key="106" class="key"><input type="button" name="*" value="*" onclick="forms.text.value += '*'"></div>
+                <div data-key="96" class="key"><input type="button" name="0" value="0" onclick="forms.text.value += '0'"></div>
+                <div data-key="13" class="key"><input type="button" name="=" value="=" onclick="handleEnter();"></div><br>
 
-                <input type="button" value="Clear All" id="button" onclick="forms.text.value=' '">
+                <input type="button" name="square" value="Square" id="square">
+                <input type="button" name="sqrt" value="Sqrt" id="sqrt">
+                <div data-key="8" class="key"><input name="&lt;" type="button" value="&lt;" id="backspace"></div>
+
+                <input type="button" value="ClearAll">
 
             </form>
         </center>
-
+        </div>
         <script>
             var squareElement = document.getElementById('square');
             var textElement = document.getElementById('text');
             var backspaceElement = document.getElementById('backspace');
-            var sqrtElement=document.getElementById('sqrt')
+            var sqrtElement = document.getElementById('sqrt');
 
             squareElement.addEventListener('click', function() {
                 textElement.value = Math.pow(textElement.value, 2);
@@ -70,13 +87,76 @@
             });
 
             backspaceElement.addEventListener('click', function() {
-                textElement.value = textElement.value.slice(0, -1);
+                handleBackspace();
             });
+<<<<<<< HEAD
             function dealWithKeyboard(){
             alert("hi");
             }
 
             function 
+=======
+
+            function handleBackspace() {
+                textElement.value = textElement.value.slice(0, -1);
+            }
+            function handleEnter(){
+                forms.text.value =eval(forms.text.value)
+            }
+
+            /*function playsound(e){
+                const key=document.querySelector('key[data-key="${e.keycode}"]');
+                key.classList.add('playing');
+            }
+
+            function removeTransition(e){
+                if(e.propertyName!=='transform')return;
+                this.classList.remove('playing');
+            }
+            const keys=document.querySelectorAll('.key');
+            key.forEach(key=>key.addEventListener('transitionend',removeTransition));
+            window.addEventListener('keydown',playsound);*/
+
+            function removeTransition(e) {
+                if (e.propertyName !== 'transform') return;
+
+                e.target.classList.remove('playing');
+            }
+
+            function playsound(e) {
+                var key = document.querySelector('div[data-key="' + e.keyCode + '"]');
+
+                if (key) {
+                    key.classList.add('playing');
+
+                    if (e.keyCode == 8) {
+                        handleBackspace();
+
+                        return;
+                    }
+                    if(e.keyCode == 13){
+                        handleEnter();
+                        return;
+                    }
+
+                    if (e.keyCode == 8) {
+                        handleBackspace();
+
+                        return;
+                    }
+
+                    forms.text.value += e.key;
+                }
+            }
+
+            var keys = Array.from(document.querySelectorAll('.key'));
+
+            keys.forEach(function(key) {
+                key.addEventListener('transitionend', removeTransition);
+            });
+
+            window.addEventListener('keydown', playsound);
+>>>>>>> 1e73dd9432eb8a5dff08b12e262c6a784f58b2cc
         </script>
     </body>
 </html>
