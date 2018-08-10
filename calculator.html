@@ -5,7 +5,7 @@
     </head>
     <style>
         #forms{
-            margin:50px 40% 0;
+            margin:50px 38% 0;
             background-color: gray;
             padding-bottom: 10px;
         }
@@ -25,7 +25,7 @@
         <center>
             <form id="forms" name="forms">
                 <input type="text" name="text" id="text"><br>
-
+                <div data-key="97"></div>
                 <input type="button" name="1" value="1" onclick="forms.text.value += '1'">
                 <input type="button" value="2" onclick="forms.text.value += '2'">
                 <input type="button" value="3" onclick="forms.text.value += '3'"><br>
@@ -72,9 +72,11 @@
             backspaceElement.addEventListener('click', function() {
                 textElement.value = textElement.value.slice(0, -1);
             });
-            function dealWithKeyboard(1){
+            function dealWithKeyboard(){
             alert("hi");
             }
+
+            function 
         </script>
     </body>
 </html>
