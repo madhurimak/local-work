@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>form validation</title>
+        <style>
+            body{
+                margin: 5%;
+
+            }
+            #top{
+                width: 50%;
+                height: 17px;
+                border: 1.5px solid grey;
+                background-color: lightgrey;
+            }
+            #myprogressBar{
+                width: 50%;
+                height: 17px;
+                background-image: url("images (2).jpeg");
+                border-radius: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+            <h4 style="line-height: 1px;"> PROGRESS BAR</h4>
+        <div id="top">
+            <div id="myprogressBar"></div>
+        </div><br><button onclick="update();">CLICK ME</button><br> <br>
+        <h2>FORM VALIDATION</h2>
+
+        <form name="my_form">
+            NAME : <input type="text" name="name"><br><br>
+            EMAIL : <input type="email" name="email"><br><br>
+            B.O.D. : <input type="date" name="birth"><br><br>
+            GENDER : <input type="radio" name="gender" value="male" checked> MALE
+                     <input type="radio" name="gender" value="female"> FEMALE<br><br>
+            HOBBIES: <input type="checkbox" name="hobbies" value="sports">SPORTS
+                     <input type="checkbox" name="hobbies" value="reading">READING
+                     <input type="checkbox" name="hobbies" value="dancing">DANCING
+                     <input type="checkbox" name="hobbies" value="other">OTHERS<br> <br>
+            cities : <select>
+                        <option>SELECT A CITY</option>
+                        <option value="rajkot" name="cities">RAJKOT</option>
+                        <option value="surat"name="cities">SURAT</option>
+                        <option value="ahmedabad"name="cities">AHMEDABAD</option>
+                        <option value="other"name="cities">OTHERS</option>
+                    </select><br><br><br>
+            <textarea rows="5" cols="50" name="notes" placeholder="ENTER NOTES HERE.........."></textarea><br>
+            <input type="submit" value="SUBMIT">
+.
+        </form>
+        <script>
+            function update() {
+  var element = document.getElementById("myprogressBar");
+  var width = 1;
+  var identity = setInterval(scene, 10);
+  function scene() {
+    if (width >= 100) {
+      clearInterval(identity);
+    } else {
+      width++;
+      element.style.width = width + '%';
+    }
+  }
+}
+var counter=0
+var name=document.my_form.name.value;
+if(name==""){
+    counter++;
+}else{
+    return false;
+}
+var email=document.my_form.email.value;
+if(email==""){
+    counter++;
+}else{
+    return false;
+}
+var birthDate=document.my_form.birth.value;
+if(birthDate==""){
+    counter++;
+}else{
+    return false;
+}
+var gender=document.my_form.gender.value;
+if(gender==""){
+    counter++;
+}else{
+    return false;
+}
+var hobbies=document.my_form.hobbies.value;
+if(hobbies==""){
+    counter++;
+}else{
+    return false;
+}
+var cities=document.my_form.cities.value;
+if(cities==""){
+    counter++;
+}else{
+    return false;
+}
+var notes=document.my_form.notes.value;
+if(notes==""){
+    counter++;
+}else{
+    return false;
+}
+var percentage=(100*counter)/7;
+
+
+
+
+
+
+
+        </script>
+
+    </body>
+</html>
