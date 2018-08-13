@@ -35,17 +35,10 @@
         <center>
             <form id="forms" name="forms">
                 <input type="text" name="text" id="text"><br>
-<<<<<<< HEAD
-                <div data-key="97"></div>
-                <input type="button" name="1" value="1" onclick="forms.text.value += '1'">
-                <input type="button" value="2" onclick="forms.text.value += '2'">
-                <input type="button" value="3" onclick="forms.text.value += '3'"><br>
-=======
 
                 <div data-key="97" class="key"><input type="button" name="1" value="1" onclick="forms.text.value += '1'"></div>
-                <div data-key="98" class="key"><input type="button" name="2" value="2" onclick="forms.text.value += '2'"></div>
-                <div data-key="99" class="key" ><input type="button" name="3" value="3" onclick="forms.text.value += '3'"></div><br>
->>>>>>> 1e73dd9432eb8a5dff08b12e262c6a784f58b2cc
+                <div data-key="98" class="key"><input type="button" value="2" onclick="forms.text.value += '2'"></div>
+                <div data-key="99" class="key"><input type="button" value="3" onclick="forms.text.value += '3'"></div><br>
 
                 <div data-key="100" class="key"> <input type="button" name="4" value="4" onclick="forms.text.value += '4'"></div>
                 <div data-key="101" class="key"><input type="button" name="5" value="5" onclick="forms.text.value += '5'"></div>
@@ -89,33 +82,17 @@
             backspaceElement.addEventListener('click', function() {
                 handleBackspace();
             });
-<<<<<<< HEAD
             function dealWithKeyboard(){
             alert("hi");
             }
 
-            function 
-=======
 
             function handleBackspace() {
                 textElement.value = textElement.value.slice(0, -1);
             }
             function handleEnter(){
-                forms.text.value =eval(forms.text.value)
+                forms.text.value =eval(forms.text.value);
             }
-
-            /*function playsound(e){
-                const key=document.querySelector('key[data-key="${e.keycode}"]');
-                key.classList.add('playing');
-            }
-
-            function removeTransition(e){
-                if(e.propertyName!=='transform')return;
-                this.classList.remove('playing');
-            }
-            const keys=document.querySelectorAll('.key');
-            key.forEach(key=>key.addEventListener('transitionend',removeTransition));
-            window.addEventListener('keydown',playsound);*/
 
             function removeTransition(e) {
                 if (e.propertyName !== 'transform') return;
@@ -156,7 +133,6 @@
             });
 
             window.addEventListener('keydown', playsound);
->>>>>>> 1e73dd9432eb8a5dff08b12e262c6a784f58b2cc
         </script>
     </body>
 </html>
