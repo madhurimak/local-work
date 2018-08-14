@@ -36,30 +36,44 @@
         </style>
     </head>
     <body>
-        <form>
-            textbox : <input type="number"><br><br>
+        Number of times : <input type="number" id="number"><br><br>
 
-            <div class="rectangle"></div><br>
-            <div class="circle"></div><br>
-            <div class="triangle"></div><br>
-            <div class="square"></div><br>
+        <select id="shape">
+            <option value="" >select a shape</option>
+            <option value="rectangle">rectangle</option>
+            <option value="circle" >circle</option>
+            <option value="triangle" >triangle</option>
+            <option value="square">square</option>
+        </select>
 
-            <select>
-                <option value="" >select a shape</option>
-                <option value="rectangle">rectangle</option>
-                <option value="circle" >circle</option>
-                <option value="triangle" >triangle</option>
-                <option value="square">square</option>
-            </select>
-        </form>
+        <input type="button" onclick="displayShapes()" value="Display">
+
+        <div id="draw-shapes"></div>
+
+        <template id="shape-container">
+            <div class="rectangle"></div>
+            <div class="circle"></div>
+            <div class="triangle"></div>
+            <div class="square"></div>
+        </template>
+        
         <script>
+            var numberElement = document.getElementById('number');
+            var shapeElement = document.getElementById('shape');
+            var shapeContainer = document.getElementById('shape-container');
+            var drawShapes = document.getElementById('draw-shapes');
+            
+            function displayShapes() {
+                var number = numberElement.value;
+                var shape = shapeElement.value;
+                drawShapes.innerHTML = '';
 
+                for (i = 0; i < number; i++) {
+                    shapeName = shapeContainer.content.querySelector('.' + shape).cloneNode();
+
+                    drawShapes.appendChild(shapeName);
+                }
+            }
         </script>
     </body>
 </html>
-<!-- create form
-- textbox - type - number
-- select - option - rectangle - circle - triangle - polygon
-- submit
-
-- display x number of shapes as per selection -->
