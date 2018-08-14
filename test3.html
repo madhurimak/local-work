@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form name="myForm">
+            NUMBERS : <input type="number" name="number" value="number">
+            <input type="submit" value="SUBMIT" onclick="numberTest();">
+        </form>
+        <script>
+           
+            function numberTest(){
+                var num1=document.myForm.number.value;
+                var i;
+                for(i=0 ; i<num1 ; i++){
+                    if(i==3){
+                        continue;
+                    }
+                    document.write(i + "<br>");
+                }
+            }
+        </script>
+    </body>
+</html>
