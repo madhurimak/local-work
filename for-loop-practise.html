@@ -1,6 +1,65 @@
-create form
+<!doctype html>
+<html>
+    <head>
+        <style>
+            .rectangle{
+                height: 200px;
+                width: 400px;
+                border:1px solid black;
+                background-color: grey;
+
+            }
+            .circle{
+                height: 250px;
+                width: 250px;
+                border:1px solid black;
+                border-radius: 500px;
+                background-color: grey;
+
+            }
+            .triangle{
+                width: 0;
+	            height: 0;
+	            border-left: 180px solid transparent;
+	            border-right: 180px solid transparent;
+	            border-bottom: 360px solid grey;
+
+
+            }
+            .square{
+                height: 300px;
+                width: 300px;
+                border: 1px solid black;
+                background-color: grey;
+
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            textbox : <input type="number"><br><br>
+
+            <div class="rectangle"></div><br>
+            <div class="circle"></div><br>
+            <div class="triangle"></div><br>
+            <div class="square"></div><br>
+
+            <select>
+                <option value="" >select a shape</option>
+                <option value="rectangle">rectangle</option>
+                <option value="circle" >circle</option>
+                <option value="triangle" >triangle</option>
+                <option value="square">square</option>
+            </select>
+        </form>
+        <script>
+
+        </script>
+    </body>
+</html>
+<!-- create form
 - textbox - type - number
 - select - option - rectangle - circle - triangle - polygon
 - submit
 
-- display x number of shapes as per selection
+- display x number of shapes as per selection -->
