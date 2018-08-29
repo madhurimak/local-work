@@ -14,10 +14,10 @@
                 var num1=document.myForm.number.value;
                 var i;
                 for(i=0 ; i<num1 ; i++){
-                    if(i==3){
+                    if(i==3 || i % 3){
                         continue;
                     }
-                    document.write(i + "<br>");
+                    document.write("hello " + i + "<br>");
                 }
             }
         </script>
