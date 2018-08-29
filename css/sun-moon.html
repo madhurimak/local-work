@@ -12,63 +12,67 @@
 
       @keyframes bgcolor{
         0% {
-          background-color: white; 
+          background-color: white;
         }
         50% {
-          background-color: white; 
+          background-color: #ffca7c;
         }
-        50%{
+        52%{
           background-color: black;
         }
         100% {
-          background-color: black; 
+          background-color: black;
         }
       }
-      
+
       #ball1 {
         width: 100px;
         height: 100px;
         position: fixed;
-        border-radius: 50%; 
-        background-color: #FDB813;
+        border-radius: 50%;
+        background-color: #ffab30;
         animation-name: sun;
         animation-duration: 7s;
         animation-iteration-count: infinite;
         left: 10%;
-        
+
       }
       @keyframes sun{
       0%{
-        bottom: 0% 
+        bottom: 0%
       }
       10%{
-        bottom:30%;
-        margin-left: 10%;
+        bottom:20%;
+        margin-left: 15%;
       }
       20%{
-        bottom: 50%;
-        margin-left: 30%;
+        bottom: 40%;
+        margin-left: 25%;
       }
       30% {
-        bottom: 70%;
-        margin-left: 50%
+        bottom: 55%;
+        margin-left: 35%
+      }
+      35% {
+        bottom: 60%;
+        margin-left: 45%
       }
       40%{
-        bottom: 50%;
-        margin-left: 70%;
+        bottom: 40%;
+        margin-left: 55%;
       }
       50%{
-       bottom:30%;
-        margin-left: 90%;
+       bottom:20%;
+        margin-left: 65%;
       }
 
       60%{
-        bottom:0%;
-        margin-left: 100%
+        bottom: -15%;
+        margin-left: 75%
       }
       100%{
-        bottom:0%;
-        margin-left: 100%
+        bottom: -15%;
+        margin-left: 80%
       }
       }
 
@@ -76,23 +80,50 @@
         width: 100px;
         height: 100px;
         position: fixed;
-        top: 0%;
-        border-radius: 50%; 
+        right: 20%;
+        border-radius: 50%;
         background-color: #ffffff;
         animation-name: moon;
         animation-duration: 7s;
         animation-iteration-count: infinite;
-        
+        float: right;
       }
       @keyframes moon{
       0%{
-        top: 0%
+        bottom:-15%;
       }
-      50% {
-        top: 0%;
+      50%{
+        bottom: -10%;
+        margin-right: 5%;
+      }
+      60%{
+        bottom:30%;
+        margin-right: 15%;
+      }
+      65%{
+        bottom: 50%;
+        margin-right: 25%;
+      }
+      70% {
+        bottom: 70%;
+        margin-right: 35%
+      }
+      75%{
+        bottom: 50%;
+        margin-right: 45%;
+      }
+      80%{
+       bottom:30%;
+        margin-right: 55%;
+      }
+
+      90%{
+        bottom: 10%;
+        margin-right: 65%;
       }
       100%{
-        top: 100%;
+        bottom: -15%;
+        margin-right: 75%;
       }
       }
     </style>
