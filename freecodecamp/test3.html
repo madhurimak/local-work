@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: gray;
+            }
+            #container {
+                width: 80%;
+                margin: 0 auto;
+                background-color: white;
+                height: 800px;
+            }
+            img{
+                float: left;
+                padding-bottom: 5%;
+            }
+            
+            li{
+                display: inline-block;
+                float: right;
+                padding: 10px;
+            }
+
+            #video{
+                margin: 50px;
+                border: 1px solid black;
+                
+            }
+            #form{
+                text-align: center;
+            }
+            #submit{
+                border: 2px solid darkred;
+                border-radius: 8px;
+                background-color: lightcoral;
+            }
+            #box-container {
+                display: flex;
+                height: 500px;
+            }
+            #box-1 {
+                background-color: dodgerblue;
+                width: 100%;
+                height: 200px;
+                flex-shrink: 1;
+            }
+
+            #box-2 {
+                background-color: orangered;
+                width: 100%;
+                height: 200px;
+                flex-shrink: 2;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div id="container">
+        <header id="header">
+            <img src="download.png" id="header-img">
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#">HOME</a></li>
+                    <li><a class="nav-link" href="#">ABOUT US</a></li>
+                    <li><a class="nav-link" href="#">ALL SUBJECT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div style="clear:both"></div>
+        <iframe id="video" width="420" height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        <form id="form">
+            <label>EMAIL ADDRESS :</label>
+            <input id="email" type="email" placeholder="Enter Your Email Id"><br><br>
+            <input type="submit" value="SUBMIT NOW !" id="submit"><br><br><br>
+        </form>
+
+        <div id="box-container">
+                <div id="box-1"></div>
+                <div id="box-2"></div>
+        </div>
+        </div>
+        
+    </body>
+</html>
