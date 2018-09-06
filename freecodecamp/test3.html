@@ -14,18 +14,30 @@
             img{
                 float: left;
                 padding-bottom: 5%;
+                width: 10%;
+                height: 80px;
             }
-            
-            li{
-                display: inline-block;
-                float: right;
+
+            ul{
+                 float: right;
                 padding: 10px;
+
+            }
+            li {
+                display: inline-block;
+
+
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                line-break: 1.5rem;
             }
 
             #video{
-                margin: 50px;
+                margin-left: 35%;
                 border: 1px solid black;
-                
+
             }
             #form{
                 text-align: center;
@@ -34,6 +46,7 @@
                 border: 2px solid darkred;
                 border-radius: 8px;
                 background-color: lightcoral;
+                padding: 10px;
             }
             #box-container {
                 display: flex;
@@ -53,13 +66,13 @@
                 flex-shrink: 2;
             }
 
-            
+
         </style>
     </head>
     <body>
         <div id="container">
         <header id="header">
-            <img src="download.png" id="header-img">
+            <img src="glyph.jpg" id="header-img">
             <nav id="nav-bar">
                 <ul>
                     <li><a class="nav-link" href="#">HOME</a></li>
@@ -71,7 +84,7 @@
         <div style="clear:both"></div>
         <iframe id="video" width="420" height="315"
         src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
+        </iframe><br><br>
         <form id="form">
             <label>EMAIL ADDRESS :</label>
             <input id="email" type="email" placeholder="Enter Your Email Id"><br><br>
@@ -83,6 +96,6 @@
                 <div id="box-2"></div>
         </div>
         </div>
-        
+
     </body>
 </html>

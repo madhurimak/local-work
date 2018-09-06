@@ -6,54 +6,62 @@
                 background-color: gray;
             }
 
-            div{
+            #container{
                 width: 80%;
                 margin: 0 auto;
                 background-color: white;
                 text-align: center;
                 height: 800px;
                 padding: 15px;
+
             }
             #submit{
                 border: 1px solid darkcyan;
                 border-radius: 5px;
-                padding: 5px;
+                padding: 10px;
                 background-color: lightcyan;
+                font-size: 18px;
+                margin: 20px;
             }
+             #survey-form{
+                 border: 1px solid grey;
+                padding: 50px;
+                margin: 20px;
+             }
         </style>
     </head>
     <body>
-        <div>
+        <div id="container">
         <h1 id="title">A Form</h1>
         <p id="description">A survey form</p>
         <form id="survey-form">
-            <label id="name-label">NAME :</label>
+            <label id="name-label" class="label">NAME :</label>
             <input type="text" id="name" placeholder="Enter Your Name"><br><br>
 
-            <label id="email-label">E-MAIL :</label>
-            <input type="email" id="email" placeholder="Enter Email Here"><br><br>
+            <label id="email-label" class="label">E-MAIL :</label>
+            <input type="email"  id="email" placeholder="Enter Email Here"><br><br>
 
-            <label id="number-label">NUMBER :</label>
-            <input type="number" id="number" placeholder="Enter Number" min="0" max="99" size="10"><br><br>
+            <label id="number-label" class="label">NUMBER :</label>
+            <input type="number" id="number"  placeholder="Enter Number Here" min="0" max="99"><br><br>
 
-            <label>CARS :</label>
-            <select id="dropdown">
-                <option value="">Select A Car</option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
+            <label class="label">CARS :</label>
+            <select id="dropdown"  >
+                <option value="" >Select A Car</option>
+                <option value="volvo" >Volvo</option>
+                <option value="saab" >Saab</option>
+                <option value="opel" >Opel</option>
                 <option value="audi">Audi</option>
             </select><br><br>
 
-            GENDER :  
-            <input type="radio" name="gender" value="male" checked> Male
-            <input type="radio" name="gender" value="female"> Female<br><br>
+            <label class="label">GENDER :</label>
+            <input type="radio"  name="gender" value="male" checked> Male
+            <input type="radio"  name="gender" value="female"> Female<br><br>
 
-            SELECT ANY ONE :
+            <label class="label">SELECT ANY ONE :</label>
             <input type="checkbox" name="vehicle" value="Bike"> I have a bike
             <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br><br>
 
-            COMMENTS :<textarea rows="4" cols="50" placeholder="enter your comments here.....">
+            <label class="label"> COMMENTS :</label><textarea rows="4" cols="40">
             </textarea><br><br>
 
             <input type="submit" id="submit" value="SUBMIT">
