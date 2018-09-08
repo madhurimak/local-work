@@ -2,8 +2,7 @@
     width: 800px;
     height: 800px;
     border: 3px solid black;
-    margin: 2% 10% ;
-}
+    }
 .container div {
     color: black;
     border: 1px solid darkolivegreen;
@@ -42,4 +41,151 @@ div:nth-child(even){
     border-radius: 50%;
     background-color: green !important ;
 
+}
+.counter-player{
+    width: 100px ;
+    height: 150px ;
+    border: 2px solid black;
+    margin-top: 2%;
+}
+.player{
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    padding-top: 1%;
+}
+.dice{
+    float: left;
+    background-color: white !important;
+}
+.dice1{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 30%;
+    background-color: white;
+    margin-top: 2%;
+}
+.figure1{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.figure2-1{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 10%;
+}
+.figure2-2{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 40% 40% 40% 50%;
+}
+.figure3-1{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 5%;
+}
+.figure3-2{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 10% 10% 10% 35%;
+}
+.figure3-3{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin-left: 70%;   
+}
+.figure4-1{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 10%;   
+}
+.figure4-2{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 0% 0% 0% 250%;
+}
+.figure4-3{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 33% 0% 0% 10%;
+}
+.figure4-4{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 0% 0% 0% 250%;
+}
+.figure5-1{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 8%;
+}
+.figure5-2{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 0% 0% 0% 300%;
+
+}
+.figure5-3{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 0% 35%;
+}
+.figure5-4{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin: 5%;
+}
+.figure5-5{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black !important;
+    margin-left: 300%
 }
