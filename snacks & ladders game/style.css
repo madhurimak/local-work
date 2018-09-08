@@ -1,7 +1,10 @@
 .container{
+    float: left;
     width: 800px;
     height: 800px;
     border: 3px solid black;
+    margin:2% 10%;
+    position: relative;
     }
 .container div {
     color: black;
@@ -12,11 +15,17 @@
     float: left;
     font-size: 23px !important;
 }
-div:nth-child(odd){
+.oddeven:nth-child(odd){
     background-color: lightblue;
 }
-div:nth-child(even){
+.oddeven:nth-child(even){
     background-color: lightpink;
+}
+.evenodd:nth-child(odd){
+    background-color: lightpink;
+}
+.evenodd:nth-child(even){
+    background-color: lightblue;
 }
 .counter-blue{
     border: 1 px solid black;
@@ -46,17 +55,17 @@ div:nth-child(even){
     width: 100px ;
     height: 150px ;
     border: 2px solid black;
-    margin-top: 2%;
+    margin:10% 70%;
 }
 .player{
     width: 100px;
-    height: 50px;
+    height: 47px;
     border: 1px solid black;
     padding-top: 1%;
 }
 .dice{
-    float: left;
     background-color: white !important;
+
 }
 .dice1{
     display: inline-block;
@@ -64,15 +73,15 @@ div:nth-child(even){
     height: 40px;
     border: 3px solid black;
     border-radius: 30%;
-    background-color: white;
-    margin-top: 2%;
+    background-color: blue;
+
 }
 .figure1{
     width: 7px;
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 0 auto;
     margin-top: 15px;
 }
@@ -81,7 +90,7 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 10%;
 }
 .figure2-2{
@@ -89,7 +98,7 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 40% 40% 40% 50%;
 }
 .figure3-1{
@@ -97,7 +106,7 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 5%;
 }
 .figure3-2{
@@ -105,7 +114,7 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 10% 10% 10% 35%;
 }
 .figure3-3{
@@ -113,23 +122,23 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
-    margin-left: 70%;   
+    background-color: white !important;
+    margin-left: 70%;
 }
 .figure4-1{
     width: 7px;
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
-    margin: 10%;   
+    background-color: white !important;
+    margin: 10%;
 }
 .figure4-2{
     width: 7px;
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 0% 0% 0% 250%;
 }
 .figure4-3{
@@ -137,7 +146,7 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 33% 0% 0% 10%;
 }
 .figure4-4{
@@ -145,7 +154,7 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 0% 0% 0% 250%;
 }
 .figure5-1{
@@ -153,7 +162,7 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 8%;
 }
 .figure5-2{
@@ -161,7 +170,7 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 0% 0% 0% 300%;
 
 }
@@ -170,7 +179,7 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 0% 35%;
 }
 .figure5-4{
@@ -178,7 +187,7 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin: 5%;
 }
 .figure5-5{
@@ -186,6 +195,270 @@ div:nth-child(even){
     height: 7px;
     border: 1px solid black;
     border-radius: 50%;
-    background-color: black !important;
+    background-color: white !important;
     margin-left: 300%
+}
+.figure6-1{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white !important;
+    margin: 9%;
+}
+.figure6-2{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white !important;
+    margin: 0% 0% 0% 250%;
+}
+.figure6-3{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white !important;
+    margin: 9%;
+}
+.figure6-4{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white !important;
+    margin: 0% 0% 0% 250%;
+}
+.figure6-5{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white !important;
+    margin: 9%;
+}
+.figure6-6{
+    width: 7px;
+    height: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white !important;
+    margin: 0% 0% 0% 250%;
+}
+.ladder1{
+    position: absolute;
+    left: 0px;
+    top: 361px;
+    margin: 0 0 0 230px;
+}
+.ladder-side1{
+    width: 40px;
+    height: 280px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    position: relative !important;
+    transform: rotate(20deg);
+}
+.step1{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    background-color: brown;
+}
+.step2{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 80px;
+    background-color: brown;
+}
+.step3{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 140px;
+    background-color: brown;
+}
+.step4{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 200px;
+    background-color: brown;
+}
+.step5{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 260px;
+    background-color: brown;
+}
+.ladder2{
+    position: absolute;
+    left: 0px;
+    top: 435px;
+    margin: 0 0 0 865px;
+}
+.ladder-side2{
+    width: 40px;
+    height: 410px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    position: relative !important;
+    transform: rotate(-10deg);
+}
+.step1{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    background-color: brown;
+}
+.step2{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 80px;
+    background-color: brown;
+}
+.step3{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 140px;
+    background-color: brown;
+}
+.step4{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 200px;
+    background-color: brown;
+}
+.step5{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 260px;
+    background-color: brown;
+}
+.step6{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 320px;
+    background-color: brown;
+}
+.step7{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 380px;
+    background-color: brown;
+}
+.ladder3{
+    position: absolute;
+    left: 0px;
+    top: 260px;
+    margin: 0 0 0 580px;
+}
+.ladder-side3{
+    width: 40px;
+    height: 220px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    position: relative !important;
+    transform: rotate(-45deg);
+}
+.step1{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    background-color: brown;
+}
+.step2{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 80px;
+    background-color: brown;
+}
+.step3{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 140px;
+    background-color: brown;
+}
+.step4{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 200px;
+    background-color: brown;
+}
+.ladder4{
+    position: absolute;
+    left: 0px;
+    top: 815px;
+    margin: 0 0 0 590px;
+}
+.ladder-side4{
+    width: 40px;
+    height: 220px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    position: relative !important;
+    transform: rotate(40deg);
+}
+.step1{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    background-color: brown;
+}
+.step2{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 80px;
+    background-color: brown;
+}
+.step3{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 140px;
+    background-color: brown;
+}
+.step4{
+    width: 40px;
+    height: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 200px;
+    background-color: brown;
 }
