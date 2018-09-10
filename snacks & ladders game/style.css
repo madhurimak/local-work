@@ -2,13 +2,13 @@
     float: left;
     width: 800px;
     height: 800px;
-    border: 3px solid black;
+    border: 3px solid black !important;
     margin:2% 10%;
     position: relative;
     }
 .container div {
     color: black;
-    border: 1px solid darkolivegreen;
+    border: 1px solid darkolivegreen !important;
     width: 78px;
     height: 78px;
     text-align: right;
@@ -27,6 +27,8 @@
 .evenodd:nth-child(even){
     background-color: lightblue;
 }
+
+
 .counter-blue{
     border: 1 px solid black;
     width: 25px !important;
@@ -61,7 +63,7 @@
     width: 100px;
     height: 47px;
     border: 1px solid black;
-    padding-top: 1%;
+    padding: 1%;
 }
 .dice{
     background-color: white !important;
@@ -204,7 +206,7 @@
     border: 1px solid black;
     border-radius: 50%;
     background-color: white !important;
-    margin: 9%;
+    margin: 7% 15%;
 }
 .figure6-2{
     width: 7px;
@@ -220,7 +222,7 @@
     border: 1px solid black;
     border-radius: 50%;
     background-color: white !important;
-    margin: 9%;
+    margin:  7% 15%;
 }
 .figure6-4{
     width: 7px;
@@ -236,7 +238,7 @@
     border: 1px solid black;
     border-radius: 50%;
     background-color: white !important;
-    margin: 9%;
+    margin:  7% 15%;
 }
 .figure6-6{
     width: 7px;
@@ -246,266 +248,83 @@
     background-color: white !important;
     margin: 0% 0% 0% 250%;
 }
-.ladder1{
-    position: absolute;
-    left: 0px;
-    top: 361px;
-    margin: 0 0 0 230px;
-}
-.ladder-side1{
+div.ladder {
     width: 40px;
-    height: 280px;
     border-left: 3px solid black;
     border-right: 3px solid black;
-    position: relative !important;
-    transform: rotate(20deg);
-}
-.step1{
-    width: 40px;
+  }
+  #ladder1 {
+    position: absolute;
+    top: 280px;
+    left: 230px;
+    transform: rotate(17deg);
+  }
+  #ladder2 {
+    position: absolute;
+    top: 475px;
+    left: 825px;
+    transform: rotate(-33deg);
+  }
+  #ladder3 {
+    position: absolute;
+    top: 725px;
+    left: 310px;
+    transform: rotate(28deg);
+  }
+  #ladder4 {
+    position: absolute;
+    top: 185px;
+    left: 555px;
+    transform: rotate(28deg);
+  }
+
+  div.ladder div {
+    width: 100%;
+    height: 40px;
+  }
+  div.ladder div:not(:first-child) {
+    border-top: 1px solid black;
+  }
+  div.ladder div:not(:first-child)::after {
+    content: '';
+    display: block;
     height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 20px;
-    background-color: brown;
-}
-.step2{
+    width: 100%;
+    background: red;
+    border-bottom: 1px solid black;
+  }
+  div.snake {
     width: 40px;
-    height: 5px;
-    border: 1px solid black;
+  }
+
+  div.snake div {
+    width: 100%;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  div.snake div:nth-child(odd) {
+    border-left: 10px solid green;
+  }
+  div.snake div:nth-child(even) {
+    border-right: 10px solid green;
+  }
+
+  #snake1 {
     position: absolute;
-    top: 80px;
-    background-color: brown;
-}
-.step3{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
+    top: 170px;
+    left: 555px;
+    transform: rotate(28deg);
+  }
+  #snake2 {
     position: absolute;
-    top: 140px;
-    background-color: brown;
-}
-.step4{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 200px;
-    background-color: brown;
-}
-.step5{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 260px;
-    background-color: brown;
-}
-.ladder2{
-    position: absolute;
-    left: 0px;
-    top: 435px;
-    margin: 0 0 0 865px;
-}
-.ladder-side2{
-    width: 40px;
-    height: 410px;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    position: relative !important;
-    transform: rotate(-10deg);
-}
-.step1{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 20px;
-    background-color: brown;
-}
-.step2{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 80px;
-    background-color: brown;
-}
-.step3{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 140px;
-    background-color: brown;
-}
-.step4{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 200px;
-    background-color: brown;
-}
-.step5{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 260px;
-    background-color: brown;
-}
-.step6{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 320px;
-    background-color: brown;
-}
-.step7{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 380px;
-    background-color: brown;
-}
-.ladder3{
-    position: absolute;
-    left: 0px;
-    top: 260px;
-    margin: 0 0 0 580px;
-}
-.ladder-side3{
-    width: 40px;
-    height: 220px;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    position: relative !important;
-    transform: rotate(-45deg);
-}
-.step1{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 20px;
-    background-color: brown;
-}
-.step2{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 80px;
-    background-color: brown;
-}
-.step3{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 140px;
-    background-color: brown;
-}
-.step4{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 200px;
-    background-color: brown;
-}
-.ladder4{
-    position: absolute;
-    left: 0px;
-    top: 815px;
-    margin: 0 0 0 590px;
-}
-.ladder-side4{
-    width: 40px;
-    height: 220px;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    position: relative !important;
+    top: 547px;
+    left: 580px;
     transform: rotate(40deg);
-}
-.step1{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
+  }
+  #snake3 {
     position: absolute;
-    top: 20px;
-    background-color: brown;
-}
-.step2{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 80px;
-    background-color: brown;
-}
-.step3{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 140px;
-    background-color: brown;
-}
-.step4{
-    width: 40px;
-    height: 5px;
-    border: 1px solid black;
-    position: absolute;
-    top: 200px;
-    background-color: brown;
-}
-.snacks{
-    margin-left: 10px;
-}
-.s1{
-    height: 50px;
-    width: 4px;
-    border-left: 1px solid black;
-    background-color: black;
-    border-radius: 15px 50px 30px;
-    transform: rotate(-45deg);
-
-}
-.s2{
-    height: 50px;
-    width: 4px;
-    border-left: 1px solid black;
-    background-color: black;
-    transform: rotate(-45deg);
-    border-radius: 15px 50px 30px;
-
-
-}.s3{
-    height: 50px;
-    width: 4px;
-    border-left: 1px solid black;
-    background-color: black;
-    transform: rotate(-45deg);
-    border-radius: 15px 50px 30px;
-
-}.s4{
-    height: 50px;
-    width: 4px;
-    border-left: 1px solid black;
-    background-color: black;
-    transform: rotate(-45deg);
-    border-radius: 15px 50px 30px;
-
-
-}.s5{
-    height: 50px;
-    width: 4px;
-    border-left: 1px solid black;
-    background-color: black;
-    border-radius: 15px 50px 30px;
-    transform: rotate(-45deg);
-
-}
+    top: 330px;
+    left: 350px;
+    transform: rotate(50deg);
+  }
