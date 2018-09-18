@@ -1,0 +1,62 @@
+.chessboard {
+    width: 640px;
+    height: 600px;
+    margin: 0 auto;
+    border: 25px solid #333;
+    position: relative;
+}
+
+.chessboard div {
+    float: left;
+    width: 80px;
+    height: 75px;
+    font-size:60px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+}
+
+.oddeven:nth-child(odd) {
+    background-color: darkblue;
+}
+
+.oddeven:nth-child(even) {
+    background-color: lightblue;
+}
+
+.evenodd:nth-child(odd) {
+    background-color: lightblue;
+}
+
+.evenodd:nth-child(even) {
+    background-color: darkblue;
+}
+
+oddeven:nth-child(even):active {
+    background-color: aqua;
+}
+
+.evenodd:nth-child(odd):active {
+    background-color: aqua;
+}
+
+.scoreboard {
+    width: 150px;
+    height: 50px;
+    border: 4px solid black;
+    padding: 3px;
+    margin: 50px 0px 0px 360px;
+    position: absolute;
+    top:350px;
+    left: 670px;
+}
+
+.reset {
+    margin: 50px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10%;
+    background-color: cornflowerblue;
+
+}
+
