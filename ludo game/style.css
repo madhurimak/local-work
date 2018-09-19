@@ -120,7 +120,7 @@ div.red-path > div > div:not(:last-child) {
 }
 
 div.yellow-path {
-    width: 250px;
+    width: 251px;
     height: 100%;
     border-right: 1px solid black;
     float: right;
@@ -194,4 +194,52 @@ div.blue-path > div.last {
 div.blue-path > div > div:not(:last-child) {
     width: 50px;
     border-right: 1px solid black;
+}
+div.arrow {
+    font-size: 38px;
+    padding-left: 6px;
+}
+
+div.star {
+    font-size: 40px;
+    padding-left: 5px;
+}
+
+div.middle-shape {
+    height: 150px;
+    width: 149px;
+    float: left;
+    position: relative;
+}
+
+div.middle-shape div {
+    position: absolute;
+    width: 0;
+	height: 0;
+}
+
+div.right-shape {
+    border-top: 75px solid transparent;
+    border-right: 75px solid yellow;
+    border-bottom: 75px solid transparent;
+    right: 0;
+}
+
+div.up-shape {
+    border-top: 75px solid green;
+    border-left: 74px solid transparent;
+	border-right: 75px solid transparent;
+}
+
+div.down-shape {
+    border-bottom: 75px solid blue;
+    border-left: 74px solid transparent;
+	border-right: 75px solid transparent;
+    bottom: 0;
+}
+
+div.left-shape {
+    border-top: 75px solid transparent;
+    border-left: 74px solid red;
+	border-bottom: 75px solid transparent;
 }
