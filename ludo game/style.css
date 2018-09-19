@@ -134,16 +134,16 @@ div.yellow-path {
 
  div.yellow-path > div:not(.clear-both):not(.last) {
     height: 50px;
-    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 div.yellow-path > div.last {
     height: 40px;
 }
 
-div.yellow-path > div > div:not(:last-child) {
+div.yellow-path > div > div {
     width: 40px;
-    border-top: 1px solid black;
+    border-left: 1px solid black;
 }
 
 
