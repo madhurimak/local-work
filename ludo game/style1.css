@@ -10,6 +10,7 @@ div.container {
 }
 
 div.top {
+    width: 618px;
     display: inline-flex;
     height: 245px;
     border-bottom: 1px solid black;
@@ -17,51 +18,51 @@ div.top {
 
 div.middle {
     display: block;
-    height: 124px;
+    height: 122px;
     border-bottom: 1px solid black;
 }
 
 div.bottom {
     display: inline-flex;
-    height: 242px;
+    height: 245px;
 }
 
 div.red-home {
     display: inline-block;
     width: 245px;
-    height: 100%;
+    height: 245px;
     border-right: 1px solid black;
 }
 div.green-path {
     display: inline-block;
     width: 124px;
-    height: 100%;
+    height: 245px;
     border-right: 1px solid black;
 }
 
 div.green-home {
     display: inline-block;
     width: 245px;
-    height: 100%;
+    height: 245px;
 }
 
 div.blue-home {
     display: inline-block;
     width: 245px;
-    height: 100%;
+    height: 245px;
     border-right: 1px solid black;
 }
 div.blue-path {
     display: inline-block;
     width: 124px;
-    height: 100%;
+    height: 245px;
     border-right: 1px solid black;
 }
 
 div.yellow-home {
     display: inline-block;
     width: 245px;
-    height: 100%;
+    height: 245px;
 }
 
 div.red-bg {
@@ -77,10 +78,10 @@ div.yellow-bg {
     background-color: yellow;
 }
 div.item-container {
-    width: 170px;
-    height: 170px;
+    width: 175px;
+    height: 175px;
     background-color: white;
-    margin: 40px;
+    margin: 35px;
     padding: 20px;
 }
 div.item-round {
@@ -92,4 +93,57 @@ div.item-round {
 }
 div.margin-left {
     margin-left: 80px;
+}
+div.green-path > div:not(.last) {
+    width: 124px;
+    display: inline-flex;
+    height: 38px;
+    border-bottom: 1px solid black;
+}
+
+div.green-path > div.last {
+    width: 124px;
+    display: inline-flex;
+    height: 39px;
+}
+div.green-path > div > div:not(:last-child) {
+   width: 41px;
+   height: 40px;
+    border-right: 1px solid black;
+}
+
+div.green-path > div > div {
+    width: 40px;
+    height: 40px;
+}
+
+div.arrow {
+    font-size: 35px;
+    padding-left: 5px;
+}
+
+div.star {
+    font-size: 35px;
+    padding-left: 5px;
+}
+div.red-path {
+    display: inline-block;
+    width: 245px;
+    height: 124px;
+    border-right: 1px solid black;
+}
+
+ div.red-path > div > div {
+     display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+ div.red-path > div:not(.clear-both):not(.last) {
+    height: 41px;
+    border-bottom: 1px solid black;
+}
+
+div.red-path > div.last {
+    height: 40px;
 }
