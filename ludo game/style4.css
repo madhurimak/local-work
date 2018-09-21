@@ -1,0 +1,56 @@
+div.board {
+    width: 614px;
+    height: 614px;
+    border: 2px solid black;
+}
+
+div.top-part {
+    height: 245px;
+    border-bottom: 1px solid black;
+}
+
+div.top-part > div {
+    display: inline-block;
+    font-size: 0;
+}
+
+div.top-part > div > * {
+    font-size: initial;
+}
+
+div.top-part > div:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+div.home {
+    width: 245px;
+    height: 245px;
+}
+
+div.green-path {
+    width: 122px;
+    height: 245px;
+}
+
+div.green-path > div {
+    height: 40px;
+}
+
+div.green-path > div:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+div.green-path > div > div {
+    display: inline-block;
+    font-size: 0;
+}
+
+div.green-path > div > div {
+    font-size: initial;
+    width: 40px;
+    height: 40px;
+}
+
+div.green-path > div > div:not(:last-child) {
+    border-right: 1px solid black;
+}
