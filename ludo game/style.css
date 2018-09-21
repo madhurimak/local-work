@@ -243,3 +243,23 @@ div.left-shape {
     border-left: 74px solid red;
 	border-bottom: 75px solid transparent;
 }
+
+div.counter {
+    font-size: 40px;
+    color: lightcoral;
+}
+
+div.counter2 {
+    font-size: 40px;
+    color: lightgreen;
+}
+
+div.counter3 {
+    font-size: 40px;
+    color: lightblue;
+}
+
+div.counter4 {
+    font-size: 40px;
+    color: lightgoldenrodyellow;
+}
