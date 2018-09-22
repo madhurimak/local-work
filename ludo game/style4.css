@@ -1,25 +1,31 @@
-div.board {
-    width: 614px;
-    height: 614px;
-    border: 2px solid black;
+/* Common */
+div {
+    vertical-align: top;
 }
 
-div.top-part {
-    height: 245px;
-    border-bottom: 1px solid black;
-}
-
-div.top-part > div {
-    display: inline-block;
+div.inline-block-container {
     font-size: 0;
 }
 
-div.top-part > div > * {
-    font-size: initial;
+div.inline-block-container > * {
+    display: inline-block;
+    font-size: 16px;
 }
 
-div.top-part > div:not(:last-child) {
-    border-right: 1px solid black;
+/* Homes */
+div.items-container {
+    margin: 35px;
+    width: 175px;
+    height: 175px;
+    background-color: white;
+}
+
+div.items-container div > div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 20px;
 }
 
 div.home {
@@ -27,30 +33,155 @@ div.home {
     height: 245px;
 }
 
-div.green-path {
+/* Paths */
+div.vertical-path {
     width: 122px;
     height: 245px;
 }
 
-div.green-path > div {
+div.path > div {
     height: 40px;
 }
 
-div.green-path > div:not(:last-child) {
+div.vertical-path > div:not(:last-child) {
     border-bottom: 1px solid black;
 }
 
-div.green-path > div > div {
-    display: inline-block;
+div.path > div {
     font-size: 0;
 }
 
-div.green-path > div > div {
-    font-size: initial;
+div.path > div > div {
+    display: inline-block;
+    font-size: 16px;
+}
+
+div.path > div > div {
     width: 40px;
     height: 40px;
 }
 
-div.green-path > div > div:not(:last-child) {
+div.path > div > div:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+div.star {
+    font-size: 35px !important;
+    opacity: 0.5;
+}
+
+div.arrow {
+    font-size: 35px !important;
+    opacity: 0.5;
+}
+
+/* bg-colors */
+div.red-bg {
+    background-color: darkred;
+}
+
+div.green-bg {
+    background-color: darkgreen;
+}
+
+div.blue-bg {
+    background-color: darkblue;
+}
+
+div.yellow-bg {
+    background-color: darkgoldenrod;
+}
+
+/* counter */
+div.counter {
+    text-align: center;
+    font-size: 25px;
+}
+
+div.red-color {
+    color: red;
+}
+
+div.green-color {
+    color: chartreuse;
+}
+
+div.blue-color {
+    color: cornflowerblue;
+}
+
+div.yellow-color {
+    color: yellow;
+}
+
+/* Board level */
+div.board {
+    width: 614px;
+    height: 614px;
+    border: 2px solid black;
+}
+
+div.board > div:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+/* Top level */
+div.top-part {
+    height: 245px;
+}
+
+div.top-part > div:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+/* Middle Part */
+div.middle-part > div:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+div.finish {
+    width: 122px;
+    height: 122px;
+    position: relative;
+}
+
+div.right-shape {
+    border-top: 75px solid transparent;
+    border-right: 75px solid yellow;
+    border-bottom: 75px solid transparent;
+    right: 0;
+}
+
+div.up-shape {
+    border-top: 65px solid green;
+    border-left: 64px solid transparent;
+	border-right: 65px solid transparent;
+}
+
+div.down-shape {
+    border-bottom: 65px solid blue;
+    border-left: 64px solid transparent;
+	border-right: 65px solid transparent;
+    bottom: 0;
+}
+
+div.left-shape {
+    border-top: 65px solid transparent;
+    border-left: 64px solid red;
+	border-bottom: 65px solid transparent;
+}
+
+
+div.horizontal-path {
+    width: 245px;
+    height: 122px;
+}
+
+div.horizontal-path > div:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+/* bootom part */
+div.bottom-part > div:not(:last-child) {
     border-right: 1px solid black;
 }
