@@ -119,6 +119,8 @@ div.board {
     width: 614px;
     height: 614px;
     border: 2px solid black;
+    margin-left: 150px;
+    margin-top: 100px;
 }
 
 div.board > div:not(:last-child) {
@@ -146,29 +148,33 @@ div.finish {
 }
 
 div.right-shape {
-    border-top: 75px solid transparent;
-    border-right: 75px solid yellow;
-    border-bottom: 75px solid transparent;
+    position: absolute;
+    border-top: 63px solid transparent;
+    border-right: 62px solid darkgoldenrod;
+    border-bottom: 63px solid transparent;
     right: 0;
 }
 
 div.up-shape {
-    border-top: 65px solid green;
-    border-left: 64px solid transparent;
-	border-right: 65px solid transparent;
+    position: absolute;
+    border-top: 63px solid darkgreen;
+    border-left: 62px solid transparent;
+	border-right: 63px solid transparent;
 }
 
 div.down-shape {
-    border-bottom: 65px solid blue;
-    border-left: 64px solid transparent;
-	border-right: 65px solid transparent;
+    position: absolute;
+    border-bottom: 63px solid darkblue;
+    border-left: 62px solid transparent;
+	border-right: 63px solid transparent;
     bottom: 0;
 }
 
 div.left-shape {
-    border-top: 65px solid transparent;
-    border-left: 64px solid red;
-	border-bottom: 65px solid transparent;
+    position: absolute;
+    border-top: 63px solid transparent;
+    border-left: 62px solid darkred;
+	border-bottom: 63px solid transparent;
 }
 
 
@@ -184,4 +190,34 @@ div.horizontal-path > div:not(:last-child) {
 /* bootom part */
 div.bottom-part > div:not(:last-child) {
     border-right: 1px solid black;
+}
+/* players-box & dice */
+div.dice {
+    font-size: 70px;
+    display: inline-flex;
+    color: darkblue;
+}
+div.dice > div {
+    margin: 5px;
+    padding: 2px;
+}
+
+div.players {
+    width: 145px;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color:black;
+    margin-left: 50px;
+}
+
+div.players > div {
+    width: 125px;
+    height: 18px;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+div.other-items {
+    margin:100px 200px;
 }
