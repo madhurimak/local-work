@@ -1,9 +1,11 @@
-var whosTurn = 1;
-function nextTurn {
-    if(whosTurn == 4){
-        whosTurn = 1;
+var whoesTurn = 1;
+function nextTurn() {
+    if(whoesTurn == 4){
+        whoesTurn = 1;
     }
     else{
-        whosTurn++;
+        whoesTurn++;
     }
+    var a = document.getElementById('player- '+ whoesTurn + ' -home');
+    a.classList.add('highlight-red');
 }
