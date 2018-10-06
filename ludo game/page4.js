@@ -1,11 +1,29 @@
-var whoesTurn = 1;
+var whoseTurn = 1;
+var currentDice = 6;
 function nextTurn() {
-    if(whoesTurn == 4){
-        whoesTurn = 1;
+    var currentHome = document.getElementById('player-'+ whoseTurn + '-home');
+    currentHome.classList.remove('highlight');
+
+    if(whoseTurn == 4){
+        whoseTurn = 1;
     }
     else{
-        whoesTurn++;
+        whoseTurn++;
     }
-    var a = document.getElementById('player- '+ whoesTurn + ' -home');
-    a.classList.add('highlight-red');
+
+    var nextHome = document.getElementById('player-'+ whoseTurn + '-home');
+    nextHome.classList.add('highlight');
+}
+function rollDice() {
+    var currentDiceElement = document.getElementById('dice-'+ currentDice);
+    currentDiceElement.classList.add('hidden');
+
+    currentDice = Math.floor(Math.random()*6)+1;
+
+    var nextDiceElement = document.getElementById('dice-'+ currentDice);
+    nextDiceElement.classList.remove('hidden');
+
+    if(currentDice != 6){
+    nextTurn();
+    }
 }

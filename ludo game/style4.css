@@ -116,6 +116,7 @@ div.yellow-color {
 
 /* Board level */
 div.board {
+    display: inline-block;
     width: 614px;
     height: 614px;
     border: 2px solid black;
@@ -136,7 +137,7 @@ div.top-part > div:not(:last-child) {
     border-right: 1px solid black;
 }
 
-div.highlight-red {
+div.home.red-bg.highlight {
     animation-name: flashred;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -147,14 +148,14 @@ div.highlight-red {
     100%{background-color: darkred;}
 }
 
-div.highlight-green {
+div.home.green-bg.highlight {
     animation-name: flashgreen;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 @keyframes flashgreen {
     0% {background-color: darkgreen;}
-    50%{background-color: green;}
+    50%{background-color: #2E8B57;}
     100%{background-color: darkgreen;}
 }
 
@@ -214,7 +215,7 @@ div.bottom-part > div:not(:last-child) {
     border-right: 1px solid black;
 }
 
-div.highlight-blue {
+div.home.blue-bg.highlight {
     animation-name: flashblue;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -225,7 +226,7 @@ div.highlight-blue {
     100%{background-color: darkblue;}
 }
 
-div.highlight-yellow {
+div.home.yellow-bg.highlight {
     animation-name: flashyellow;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -246,6 +247,10 @@ div.dice > div {
     padding: 2px;
 }
 
+div.hidden {
+    display: none;
+}
+
 div.players {
     width: 145px;
     border: 3px solid white;
@@ -263,5 +268,6 @@ div.players > div {
 }
 
 div.other-items {
-    margin:100px 200px;
+    display: inline-block;
+    margin-top: 250px;
 }
