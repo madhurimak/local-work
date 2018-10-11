@@ -22,10 +22,11 @@ div.items-container {
 
 div.items-container div > div {
     width: 40px;
-    height: 40px;
+    height: 36px;
     border: 1px solid black;
     border-radius: 50%;
     margin: 20px;
+    padding-top: 4px;
 }
 
 div.home {
@@ -68,11 +69,13 @@ div.path > div > div:not(:last-child) {
 div.star {
     font-size: 35px !important;
     opacity: 0.5;
+    text-align: center;
 }
 
 div.arrow {
     font-size: 35px !important;
     opacity: 0.5;
+    text-align: center;
 }
 
 /* bg-colors */
@@ -96,6 +99,10 @@ div.yellow-bg {
 div.counter {
     text-align: center;
     font-size: 25px;
+}
+
+div.counter > span.highlight {
+    border: 2px solid white;
 }
 
 div.red-color {
@@ -172,32 +179,32 @@ div.finish {
 
 div.right-shape {
     position: absolute;
-    border-top: 63px solid transparent;
-    border-right: 62px solid darkgoldenrod;
-    border-bottom: 63px solid transparent;
+    border-top: 61px solid transparent;
+    border-right: 61px solid darkgoldenrod;
+    border-bottom: 61px solid transparent;
     right: 0;
 }
 
 div.up-shape {
     position: absolute;
-    border-top: 63px solid darkgreen;
-    border-left: 62px solid transparent;
-	border-right: 63px solid transparent;
+    border-top: 61px solid darkgreen;
+    border-left: 61px solid transparent;
+	border-right: 61px solid transparent;
 }
 
 div.down-shape {
     position: absolute;
-    border-bottom: 63px solid darkblue;
-    border-left: 62px solid transparent;
-	border-right: 63px solid transparent;
+    border-bottom: 61px solid darkblue;
+    border-left: 61px solid transparent;
+	border-right: 61px solid transparent;
     bottom: 0;
 }
 
 div.left-shape {
     position: absolute;
-    border-top: 63px solid transparent;
-    border-left: 62px solid darkred;
-	border-bottom: 63px solid transparent;
+    border-top: 61px solid transparent;
+    border-left: 61px solid darkred;
+	border-bottom: 61px solid transparent;
 }
 
 
