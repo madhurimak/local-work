@@ -14,8 +14,12 @@
             height: 100%;
         }
 
+        img {
+            max-width: 100%;
+        }
+
         #cover {
-            background: #222 url(bg4.jpeg) center center no-repeat;
+            background: #222 url(bg4.png) center center no-repeat;
             background-size: cover;
             color: white;
             height: 100%;
@@ -26,6 +30,21 @@
 
         #cover-caption {
             width: 100%;
+        }
+
+        #section-content {
+            padding: 80px 0;
+        }
+
+        #about {
+            background: url(bg-111.jpg) center center no-repeat;
+            background-size: cover;
+        }
+
+        .about-text {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1.875rem;
         }
     </style>
 
@@ -96,21 +115,21 @@
                     </ol>
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="bg4-1.jpeg" alt="Woman taking picture with a camera">
+                        <img class="d-block w-100" src="bg4-1.jpg" alt="Woman taking picture with a camera">
                         <div class="carousel-caption">
                             <h3>A woman with a camera</h3>
                             <p>She is probably taking a picture</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="bg4-2.jpeg" alt="A wet spiderweb">
+                        <img class="d-block w-100" src="bg4-2.jpg" alt="A wet spiderweb">
                         <div class="carousel-caption">
                             <h3>Down came the rain</h3>
                             <p>And washed the spider out</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="bg4-3.jpeg" alt="Two hands making a heart">
+                        <img class="d-block w-100" src="bg4-3.jpg" alt="Two hands making a heart">
                         <div class="carousel-caption">
                             <h3>Making love</h3>
                             <p>With their hands</p>
@@ -126,6 +145,76 @@
                     <span class="sr-only">Next</span>
                     </a>
                 </div>
+              </section>
+
+              <section id="what-we-do">
+                  <div class="section-content">
+                      <div class="container">
+                          <h2>What we do</h2>
+                          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat beatae, error, maiores similique dolores itaque eius perferendis omnis maxime totam rerum! Eius magnam aut perferendis veniam est nihil ipsam.</p>
+
+                          <div class="row">
+                              <div class="col-sm-12">
+                                  <div class="card-group">
+                                      <div class="card p-4">
+                                          <div class="card-block">
+                                              <h4 class="card-title">Strategy &amp; Planning</h4>
+                                              <h6 class="card-subtitle">Support card subtitle</h6>
+                                          </div>
+                                          <img src="bg4-11.jpeg" alt="a chalkboard">
+                                          <div class="card-block">
+                                              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                              <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">learn more</button>
+                                          </div>
+                                      </div>
+
+                                      <div class="card p-4">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Creative &amp; Design</h4>
+                                            <h6 class="card-subtitle">Support card subtitle</h6>
+                                        </div>
+                                        <img src="bg4-12.jpeg" alt="working on a laptop">
+                                        <div class="card-block">
+                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quas similique repellat, asperiores sed cumque dolorum numquam labore error aperiam fugiat! At deleniti, distinctio cum fuga assumenda quis corporis optio!</p>
+                                            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">learn more</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="card p-4">
+                                        <div class="card-block">
+                                            <h4 class="card-title">Programming &amp; Technical</h4>
+                                            <h6 class="card-subtitle">Support card subtitle</h6>
+                                        </div>
+                                        <img src="bg4-13.jpeg" alt="fingers typing on a keyboard">
+                                        <div class="card-block">
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repellendus aut iure non a Nesciunt distinctio cum fuga assumenda quis .</p>
+                                            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">learn more</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+
+              <section id="about">
+                  <div class="section-content">
+                      <div class="container">
+                          <div class="col-md-6">
+                              <div class="about-text mt-md-6">
+                                  <h3>About me</h3>
+                                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ducimus omnis nam veniam minima, cupiditate id dolores perspiciatis officiis facere consectetur, soluta laborum dolore distinctio perferendis, dolorum illum expedita rem!</p>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, tenetur. Expedita qui atque laudantium maxime ab voluptas iusto libero quam eveniet accusantium! Sequi blanditiis sit autem cum similique praesentium mollitia.</p>
+
+                                  <h5>Follow me on the web</h5>
+                                  <a href="" class="btn btn-outline-secondary">Twitter</a>
+                                  <a href="" class="btn btn-outline-secondary">Facebook</a>
+                                  <a href="" class="btn btn-outline-secondary">Youtube</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </section>
 
     <!-- Optional JavaScript -->
