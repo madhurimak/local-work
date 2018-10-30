@@ -3,43 +3,43 @@ var users = [
         name: 'Lucy',
         gender: 'F',
         hobby: 'pets',
-        avatar:'images/avatar1.jpg'
+        avatar:'avatar1.jpg'
     },
     {
         name: 'Betty',
         gender: 'F',
         hobby: 'pets',
-        avatar: 'images/avatar2.jpeg'
+        avatar: 'avatar2.jpeg'
     },
     {
         name: 'Ronald',
         gender: 'M',
         hobby: 'music',
-        avatar: 'images/avatar3.jpeg'
+        avatar: 'avatar3.jpeg'
     },
     {
         name: 'Christopher',
         gender: 'M',
         hobby: 'sports',
-        avatar: 'images/avatar4.png'
+        avatar: 'avatar4.png'
     },
     {
         name: 'Ximena',
         gender: 'F',
         hobby: 'reading',
-        avatar: 'images/avatar5.jpeg'
+        avatar: 'avatar5.jpeg'
     },
     {
         name: 'Paul',
         gender: 'M',
         hobby: 'shopping',
-        avatar: 'images/avatar6.jpeg'
+        avatar: 'avatar6.jpeg'
     },
     {
         name: 'Charlie',
         gender: 'M',
         hobby: 'pets',
-        avatar: 'images/avatar7.png'
+        avatar: 'avatar7.png'
     },
 
 ]
@@ -66,14 +66,14 @@ window.addEventListener('load',function() {
             if(gender == 'A' || gender == users[i].gender){
 
                 if(hobby == '' || hobby == users[i].hobby){
-                    
+
                     resultsHtml += '<div class="person-row">\
-                    <img src="images/' + users[i].avatar + '" />
+                    <img src="images/' + users[i].avatar + '" width=50 />\
                     <div class="person-info">\
                         <div>' + users[i].name + '</div>\
-                        <div>' + users[i].hobby + '</div>
+                        <div>' + users[i].hobby + '</div>\
                     </div>\
-                    <button>Add as friend</button>
+                    <button>Add as friend</button>\
                 </div>';
                 }
             }
