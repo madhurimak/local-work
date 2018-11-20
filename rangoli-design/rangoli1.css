@@ -1,0 +1,100 @@
+body {
+    margin-top: 10%;
+    box-sizing: border-box;
+    background-color: darkred;
+}
+
+div.shapes {
+    transform: rotate(43deg);
+    position: absolute;
+    bottom: 375px;
+    left: 215px;
+}
+div.shape1 {
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    -ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari 3-8 */
+    transform: rotate(50deg);
+    position: absolute;
+    top: 162px;
+    left: 5px;
+    border: 2px solid white;
+}
+div.shape2 {
+    width: 80px;
+    height: 80px;
+    background-color: purple;
+    -ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari 3-8 */
+    transform: rotate(50deg);
+    position: absolute;
+    top: 110px;
+    left: 68px;
+    border: 2px solid white;
+}
+div.shape3 {
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    -ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari 3-8 */
+    transform: rotate(50deg);
+    position: absolute;
+    top: 171px;
+    left: 119px;
+    border: 2px solid white;
+}
+
+div.shape4 {
+    width: 80px;
+    height: 80px;
+    background-color: purple;
+    -ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari 3-8 */
+    transform: rotate(50deg);
+    position: absolute;
+    top: 222px;
+    left: 57px;
+    border: 2px solid white;
+}
+div.main-shape {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    -ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari 3-8 */
+    transform: rotate(50deg);
+    border: 2px solid white;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.square {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid white;
+}
+
+div.square1 {
+    position: absolute;
+    top: 110px;
+    left: 580px;
+}
+div.square2 {
+    position: absolute;
+    top: 110px;
+    left: 913px;
+}
+div.square3 {
+    position: absolute;
+    top: 405px;
+    left: 577px;
+}
+div.square4 {
+    position: absolute;
+    top: 405px;
+    left: 923px;
+}
