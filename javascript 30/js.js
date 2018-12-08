@@ -1,13 +1,28 @@
-const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-function strip(bandName) {
-    return bandName.replace(/^(a |the |an)/i, '').trim();
-}
+const recognition = new SpeechRecognition();
+recognition.interimResults = true;
+recognition.lang = 'en-US';
 
-const sortedBands = bands.sort((a,b) => strip(a) > strip(b) ? 1 : -1);
+let p = document.createElement('p');
+const words = document.querySelector('.words');
+words.appendChild(p);
 
-document.querySelector('#bands').innerHTML =
-sortedBands
-.map(band => `<li>${band}</li>`)
-.join('')
-console.log(sortedBands);
+recognition.addEventListener('result', e => {
+  const transcript = Array.from(e.results)
+    .map(result => result[0])
+    .map(result => result.transcript)
+    .join('');
+
+    const poopScript = transcript.replace(/poop|poo|shit|dump/gi, '💩');
+    p.textContent = poopScript;
+
+    if (e.results[0].isFinal) {
+      p = document.createElement('p');
+      words.appendChild(p);
+    }
+});
+
+recognition.addEventListener('end', recognition.start);
+
+recognition.start();
