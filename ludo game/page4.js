@@ -2,6 +2,7 @@ var whoseTurn = 1;
 var currentDice = 6;
 var insideCounters = [];
 var outsideCounters = [];
+var counterSpans = document.getElementsByClassName('counter');
 
 insideCounters[1] = [1, 2, 3, 4];
 insideCounters[2] = [1, 2, 3, 4];
@@ -32,6 +33,9 @@ function rollDice() {
     currentDiceElement.classList.add('hidden');
 
     currentDice = Math.floor(Math.random()*6) + 1;
+    if (whoseTurn == 2) {
+        currentDice = 6;
+    }
 
     var nextDiceElement = document.getElementById('dice-'+ currentDice);
     nextDiceElement.classList.remove('hidden');
@@ -59,4 +63,12 @@ function giveCounterOptions() {
 
         counterElement.classList.add('highlight');
     }
+}
+
+for (var i = 0; i < counterSpans.length; i++) {
+    counterSpans[i].addEventListener("click", function(event) {
+        if (event.target.classList.contains('highlight')) {
+            alert('haal');
+        }
+    })
 }

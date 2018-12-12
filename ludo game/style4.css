@@ -96,12 +96,12 @@ div.yellow-bg {
 }
 
 /* counter */
-div.counter {
+div.counter-holder {
     text-align: center;
     font-size: 25px;
 }
 
-div.counter > span.highlight {
+div.counter-holder > span.highlight {
     border: 2px solid white;
 }
 
