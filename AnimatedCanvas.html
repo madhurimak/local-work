@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        canvas {border: 5px solid darkblue ;}
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas" width="500" height="500"></canvas>
+
+    <script>
+        var x = 10;
+        var y = 10;
+        var w = 20;
+        var h = 30;
+
+        var speed = 2;
+        var speedY = 0;
+
+        var canvas = document.getElementById("mycanvas");
+        var ctx = canvas.getContext("2d");
+        var blueZone, redZone;
+
+        var update = function() {
+          var crossRightLimit = x >= 470;
+          var crossLeftLimit = x <= 10;
+
+            if(crossRightLimit) {
+                x = 470;
+                speed = -speed;
+            } else if (crossLeftLimit) {
+                x = 10;
+                speed = -speed;
+            }
+            x = x + speed;
+            y = y + speedY;
+
+            blueZone = x > 0 && x < 150;
+            redZone = !blueZone && x < 350;
+
+            if(x >=100 && x <=150) {
+                speedY = 1;
+            } else {
+                speedY = 0;
+            }
+        }
+
+        var draw = function() {
+            ctx.clearRect(0,0,500,300);
+
+            if (blueZone) {
+                ctx.fillStyle = "#3333FF";
+            } else if (redZone) {
+                ctx.fillStyle = "#FF0000";
+            } else {
+                ctx.fillStyle = "rgb(100,500,10)";
+            }
+
+            ctx.fillRect(x,y,w,h);
+        };
+
+        var step = function() {
+            update();
+            draw();
+
+            window.requestAnimationFrame(step);
+        };
+
+        step();
+
+    </script>
+</body>
+</html>
