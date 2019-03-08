@@ -8,14 +8,12 @@ var currpawn = "";
 var allcolor = ["red", "blue", "green", "yellow"];
 var pawnOut = {red:0,blue:0,green:0,yellow:0}
 function HaveHover() {
-    var count = 0;
     var toKill = "";
     for (var i = 0; i < allcolor.length; i++) {
         for (var n = 1; n <= 4; n++) {
             var firstPawn = document.getElementById(allcolor[i] + "pawn" + n);
             var secondPawn=document.getElementById(currpawn);
             if (firstPawn.style.top==secondPawn.style.top&&firstPawn.style.left==secondPawn.style.left&&currcolor!=allcolor[i]&&currPos+num<44) {
-                count++;
                 toKill = allcolor[i] + "pawn" + n;
                 return toKill;
             }
@@ -227,7 +225,6 @@ function randomMove(Color, paw) {
                 if (onboard[currpawn] === 1 || num === 6) {
                     if (onboard[currpawn] === 0) {
                         var doc = document.getElementById(currpawn);
-                        var curr = Number(doc.style.left.replace(/[a-z]/g, ''));
                         switch (Color) {
                             case "red":
                                 doc.style.left = 318 + 'px';
