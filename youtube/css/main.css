@@ -284,6 +284,7 @@ li.mini:nth-child(2) {
 
 .video h4 {
     margin-top: 15px;
+    font-weight: 400;
 }
 
 .single-channel .video p {
@@ -304,7 +305,7 @@ li.mini:nth-child(2) {
 }
 
 .channel-name {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
 }
 
@@ -375,8 +376,7 @@ footer h4 {
 
 .sidebar a:hover {
     color: #e00918;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    text-decoration: none;  
 }
 
 .sidebar i {
@@ -418,6 +418,7 @@ footer h4 {
     margin-left: -300px;
     overflow-x: hidden;
     overflow-y: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 #sidebar-wrapper.active {
