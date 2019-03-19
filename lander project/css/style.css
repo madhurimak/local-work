@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: segoe-ul_light, segoe UI Light, segoe WP, Helvetica Neue, Helvetica, sans-serif
+}
+
+header {
+    padding: 6px 0;
+    background-color: #2cd6b0;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    float: left;
+    width: 50%;
+}
+
+.logo {
+    width: 100px;
+    height: 48px;
+    background: url(../images/logo.png) center center no-repeat;
+}
+
+.phone-number {
+    float: right;
+    color: white;
+}
+
+.phone-number .icon {
+    float: left;
+    background: url(../images/telephone-icon.png) center center no-repeat;
+    width: 30px;
+    height: 20px;
+    margin-top: 14px;
+}
+
+.phone-number .text {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+/* content */
+h1 {
+    font-size: 30px;
+    margin: 80px 0 60px 0;
+    text-align: center;
+}
+
+.blue {
+    color: #2cd6b0;
+    text-decoration: none;
+}
+
+.content {
+    overflow: hidden;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.box {
+    width: 49.9%;
+}
+
+.vertical-line {
+    border-left: 1px solid #2ca6b0;
+    height: 100px;
+    margin-top: 120px;
+}
+
+.box, .vertical-line {
+    float: left;
+}
+
+.icon-large {
+    width: 240px;
+    height: 210px;
+    margin: 0 auto;
+}
+
+.icon-large img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    padding: 0 50px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 11px;
+}
+
+.link {
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #2ca6b0;
+    display: inline-block;
+    background: rgba(143, 185, 205, .15)
+}
