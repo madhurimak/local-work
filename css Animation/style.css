@@ -1,4 +1,6 @@
-label {
+
+/* on-off button
+ label {
     position: relative;
     left: 100px;
     top: 100px;
@@ -11,7 +13,7 @@ label {
 .btn {
     display: inline-block;
     height: 50px;
-    width: 120px;
+    width: 100px;
     background: #333;
     border-radius: 50px;
     transition: background o.5s ease;
@@ -30,7 +32,17 @@ label {
 }
 
 .btn::after {
-    content: 
+    content: "off";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: -38px;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    left: 50px;
+    color: white;
+    transition: left 0.5s ease;
 }
 
 .check:checked + .btn {
@@ -39,5 +51,55 @@ label {
 
 .check:checked + .btn::before {
     background: #0283fc;
-    left: 75px;
+    left: 55px;
+}
+
+.check:checked + .btn::after {
+    left: 5px;
+    content: "on";
+} */
+
+
+/* progress_bar
+.wrapper {
+    border: 2px solid black;
+    height: 50px;
+}
+
+.progress_bar {
+    background: green;
+    width: 0%;
+    height: 100%;
+    transition: width 10s ease-in;
+}
+
+.wrapper:hover .progress_bar {
+    width: 99%;
+} */
+
+
+.wrapper {
+    background: #ddd;
+    padding: 20px;
+}
+
+.wrapper:hover .container {
+    transform: translateX(1020px) rotate(7200deg);
+}
+
+.container {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 10px dashed darkblue;
+    border-radius: 50%;
+    transition: transform 2s ease-out;
+}
+
+.wheel {
+    height: 100%;
+    text-align: center;
+    line-height: 200px;
+    text-transform: uppercase;
+    font-size: 2rem;
 }
