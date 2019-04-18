@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 800px;
+    background-image: url("abc.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.naviga {
+    height: 100px;
+    background-color: #222;
+    opacity: 0.7;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 200px;
+}
+
+a.button {
+    border: 7px solid#333;
+    border-radius: 90px;
+    padding: 15px 30px;
+    font-size: 35px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: white;
+    transition: 0.45s;
+}
+
+a.button:hover {
+    background-color: #333;
+    color: orange;
+    transition: 0.45s;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #777;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #aaa;
+}
+
+.welcome {
+    height: 550px;
+}
+
+.welcome h3 {
+    font-size: 100px;
+    font-family: 'vibur', cursive;
+    margin-top: 100px;
+    color: orange;
+}
+
+.welcome p {
+    line-height: 40px;
+    text-align: right;
+}
+
+.information {
+    height: 700px;
+    background-color: #ddd;
+}
